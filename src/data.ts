@@ -67,13 +67,13 @@ export const SERVICES: Service[] = [
     id: 'net-metering',
     title: 'Net Metering Services',
     shortDescription: 'Turn your utility meter backward and sell excess electricity to DISCOs.',
-    fullDescription: 'Glanz Energy provides a seamless, turn-key Net Metering solution. We handle the entire bureaucratic and engineering process with NEPRA and local distribution companies (IESCO, PESCO, LESCO, GEPCO) to legally permit you to feed surplus solar power back into the national grid for credit.',
+    fullDescription: 'Glanz Energy provides a seamless, turn-key Net Metering solution. We handle the entire bureaucratic and engineering process with the regulatory authorities and local distribution companies (IESCO, PESCO, LESCO, GEPCO) to legally permit you to feed surplus solar power back into the national grid for credit.',
     iconName: 'ArrowLeftRight',
     benefits: [
       'Receive monthly power credits from your electric supplier',
       'Zero paperwork on your end - Glanz handles end-to-end licensing',
       'Off-set night-time electricity consumption with daytime generation surplus',
-      'Fully certified NEPRA three-phase green meters supplied and installed'
+      'Fully certified three-phase green meters supplied and installed'
     ],
     specs: [
       { label: 'Licensing Time', value: '4 to 8 Weeks (Turnkey)' },
@@ -335,7 +335,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Homeowner',
     location: 'DHA Phase 2, Islamabad',
     rating: 5,
-    feedback: 'Glanz Energy delivered an exceptional installation experience. The execution was highly professional, from the initial site survey down to the NEPRA net metering. My monthly IESCO bill is now in negative balance. Their attention to structural safety with concrete anchor pads is praiseworthy.',
+    feedback: 'Glanz Energy delivered an exceptional installation experience. The execution was highly professional, from the initial site survey down to the net metering activation. My monthly IESCO bill is now in negative balance. Their attention to structural safety with concrete anchor pads is praiseworthy.',
     projectSizeKw: 10
   },
   {
@@ -365,7 +365,7 @@ export const BLOGS: BlogPost[] = [
     id: 'blog-net-metering',
     title: 'The Ultimate Guide to Net Metering in Pakistan',
     excerpt: 'Learn how to get approved for bi-directional net metering and sell surplus solar power back to local DISCOs.',
-    content: 'Net Metering has completely revolutionized the financial landscape of solar energy investments in Pakistan. Enabled under NEPRA regulations, it permits consumers holding 3-phase connections to feed any surplus electricity they generate during peak sunlight hours back into the national grid. Local distribution companies (DISCOs) like IESCO, PESCO, or LESCO install a bi-directional green meter that registers both imported electricity from the grid and exported energy from solar panels.\n\nAt the end of each billing cycle, the units are netted off. If you exported more than you imported, you receive credit packets that carry forward to following months, or get paid out as cash. To initiate this, you must apply with a certified NEPRA installer. Glanz Energy manages this entire workflow for you: performing electrical system audits, submitting detailed load logs, routing the application through the local sub-divisions, securing safety certificates, and final commissioning of the green meter within 4 to 8 weeks.',
+    content: 'Net Metering has completely revolutionized the financial landscape of solar energy investments in Pakistan. Enabled under national grid regulations, it permits consumers holding 3-phase connections to feed any surplus electricity they generate during peak sunlight hours back into the national grid. Local distribution companies (DISCOs) like IESCO, PESCO, or LESCO install a bi-directional green meter that registers both imported electricity from the grid and exported energy from solar panels.\n\nAt the end of each billing cycle, the units are netted off. If you exported more than you imported, you receive credit packets that carry forward to following months, or get paid out as cash. To initiate this, you must apply with a certified installer. Glanz Energy manages this entire workflow for you: performing electrical system audits, submitting detailed load logs, routing the application through the local sub-divisions, securing safety certificates, and final commissioning of the green meter within 4 to 8 weeks.',
     category: 'Net Metering',
     date: 'July 10, 2026',
     readTime: '6 min read',

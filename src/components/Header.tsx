@@ -67,11 +67,7 @@ export default function Header({ activeSection, onNavigate, onOpenSurveyModal, i
         </div>
         <div className="flex items-center space-x-6">
           <span className="flex items-center space-x-1.5">
-            <ShieldCheck className={`w-3.5 h-3.5 ${isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}`} />
-            <span>NEPRA Certified Installer</span>
-          </span>
-          <span className="flex items-center space-x-1.5">
-            <Landmark className={`w-3.5 h-3.5 ${isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}`} />
+            <Landmark className={`w-3.5 h-3.5 ${isDarkMode ? 'text-yellow-500' : 'text-blue-600'}`} />
             <span>Serving KPK & Punjab</span>
           </span>
         </div>
@@ -97,9 +93,9 @@ export default function Header({ activeSection, onNavigate, onOpenSurveyModal, i
             <Logo className="w-10 h-10 group-hover:scale-105 transition-transform" isDarkMode={isDarkMode} />
             <div>
               <span className={`font-sans font-bold text-xl tracking-tight block transition-colors duration-300 ${
-                isDarkMode ? 'text-white' : 'text-[#1e3a8a]'
+                isDarkMode ? 'text-white' : 'text-black'
               }`}>
-                Glanz<span className={isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}>Energy</span>
+                Glanz<span className="text-yellow-500">Energy</span>
               </span>
               <span className={`text-[9px] font-mono tracking-widest block uppercase -mt-1 ${
                 isDarkMode ? 'text-slate-400' : 'text-slate-500'

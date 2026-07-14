@@ -165,7 +165,7 @@ export default function SavingsCalculator({ isDarkMode = true, onQuoteSubmit }: 
             Glanz Smart Energy <span className={isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}>Estimator</span>
           </h3>
           <p className={`text-sm mt-1 ${isDarkMode ? 'text-slate-300' : 'text-slate-600'}`}>
-            Simulate your system dimensions, upfront costs, and payback periods based on NEPRA grid parameters.
+            Simulate your system dimensions, upfront costs, and payback periods based on national grid parameters.
           </p>
         </div>
         <div className={`border px-4 py-3 rounded-2xl flex items-center space-x-3 self-start md:self-auto ${
@@ -174,7 +174,7 @@ export default function SavingsCalculator({ isDarkMode = true, onQuoteSubmit }: 
           <Calculator className={`w-5 h-5 ${isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}`} />
           <div>
             <div className={`text-[10px] font-mono uppercase tracking-wider ${isDarkMode ? 'text-slate-400' : 'text-slate-500'}`}>Formula Model</div>
-            <div className={`text-xs font-semibold ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>NEPRA Net-Metering v2.5</div>
+            <div className={`text-xs font-semibold ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>Standard Net-Metering v2.5</div>
           </div>
         </div>
       </div>

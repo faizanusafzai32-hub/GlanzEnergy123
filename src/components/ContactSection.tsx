@@ -273,7 +273,7 @@ export default function ContactSection({ isDarkMode = true, prefilledQuote, clea
           </div>
 
           <div className={`text-[11px] text-center ${isDarkMode ? 'text-gray-500' : 'text-slate-500'}`}>
-            Providing turn-key engineering, site audits, and NEPRA net metering support across Khyber Pakhtunkhwa & Punjab.
+            Providing turn-key engineering, site audits, and net metering support across Khyber Pakhtunkhwa & Punjab.
           </div>
         </div>
 

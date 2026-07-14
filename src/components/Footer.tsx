@@ -46,7 +46,7 @@ export default function Footer({ onNavigate, isDarkMode = true }: FooterProps) {
             </div>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm">
-              Glanz Energy is Pakistan's premier engineering firm implementing high-yield, smart solar technology setups. We deliver turn-key grid-tied and hybrid configurations certified by NEPRA for clean, automated electricity independence.
+              Glanz Energy is Pakistan's premier engineering firm implementing high-yield, smart solar technology setups. We deliver turn-key grid-tied and hybrid configurations for clean, automated electricity independence.
             </p>
 
             {/* Social Icons */}
@@ -104,14 +104,14 @@ export default function Footer({ onNavigate, isDarkMode = true }: FooterProps) {
             <div className="space-y-3 text-xs">
               <div className="flex items-center space-x-2 text-slate-300">
                 <Shield className="w-4 h-4 text-[#fbbf24] flex-shrink-0" />
-                <span>NEPRA AED Limit Certified</span>
+                <span>Certified Solar Partner</span>
               </div>
               <div className="flex items-center space-x-2 text-slate-300">
                 <Award className="w-4 h-4 text-[#fbbf24] flex-shrink-0" />
                 <span>Tier-1 Partner</span>
               </div>
               <div className="text-[10px] text-slate-400 leading-normal">
-                Class AED-V status authorized to engineer, construct and certify grid integrations up to 1 MegaWatt.
+                Authorized to engineer, construct, and commission grid integrations up to 1 MegaWatt.
               </div>
             </div>
           </div>

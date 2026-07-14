@@ -282,7 +282,7 @@ export default function ProjectPortfolio({ isDarkMode = true }: ProjectPortfolio
                   isDarkMode ? 'text-slate-500 bg-white/5 border-white/5' : 'text-slate-600 bg-blue-50/30 border-blue-100'
                 }`}>
                   <Sun className={`w-4 h-4 flex-shrink-0 animate-pulse ${isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}`} />
-                  <span>Installed by certified Glanz electrical engineers. System meets strict NEPRA safety grids and standards.</span>
+                  <span>Installed by certified Glanz electrical engineers. System meets strict national utility safety grids and standards.</span>
                 </div>
               </div>
             </motion.div>

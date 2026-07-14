@@ -188,7 +188,7 @@ export default function App() {
               : 'bg-blue-50 border-blue-100 text-[#1e3a8a]'
           }`}>
             <span className="w-2 h-2 rounded-full bg-[#fbbf24] animate-pulse" />
-            <span>NEPRA Licenced Solar Engineering Firm</span>
+            <span>Premier Solar Engineering Firm</span>
           </div>
 
           <div className="space-y-4 max-w-4xl mx-auto">
@@ -250,7 +250,7 @@ export default function App() {
               <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}`} />
               <div>
                 <h5 className={`font-sans font-bold text-sm ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>Net Metering</h5>
-                <p className={isDarkMode ? 'text-gray-500' : 'text-slate-500'}>End-to-End NEPRA Turnkey</p>
+                <p className={isDarkMode ? 'text-gray-500' : 'text-slate-500'}>End-to-End Turnkey Support</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
@@ -312,7 +312,7 @@ export default function App() {
                   isDarkMode ? 'bg-white/5 border-white/5 text-gray-300' : 'bg-white border-slate-200 text-slate-700 shadow-sm'
                 }`}>
                   <Award className="w-4 h-4 text-[#fbbf24]" />
-                  <span>NEPRA AED-V Certified Installer</span>
+                  <span>Premium Certified Solar Installer</span>
                 </div>
                 <div className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg border ${
                   isDarkMode ? 'bg-white/5 border-white/5 text-gray-300' : 'bg-white border-slate-200 text-slate-700 shadow-sm'
@@ -616,7 +616,7 @@ export default function App() {
               Instantly Simulate Your ROI & System Dimensions
             </h2>
             <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-slate-600'}`}>
-              Use our smart simulator to estimate your system size, financial savings, and payback curves based on recent NEPRA grid parameters.
+              Use our smart simulator to estimate your system size, financial savings, and payback curves based on recent utility grid parameters.
             </p>
           </div>
 
