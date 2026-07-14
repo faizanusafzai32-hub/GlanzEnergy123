@@ -1,0 +1,6 @@
+{
+  "name": "Glanz Solar Pakistan",
+  "description": "Premium solar energy company website with interactive quote and ROI estimator, products catalog, and projects portfolio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
