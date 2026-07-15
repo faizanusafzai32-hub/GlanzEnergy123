@@ -4,6 +4,10 @@
  */
 
 import { Service, Project, Product, Testimonial, BlogPost } from './types';
+// @ts-ignore
+import resSolarImage from './assets/images/res_solar_installation_1784143571077.jpg';
+// @ts-ignore
+import comSolarImage from './assets/images/com_solar_installation_1784143587235.jpg';
 
 export const SERVICES: Service[] = [
   {
@@ -288,7 +292,7 @@ export const PROJECTS: Project[] = [
     panelsCount: 26,
     co2ReductionTonnes: 12.5,
     description: 'A complete residential green energy system equipped with premium 580W N-Type panels and a 15kW Hybrid Inverter. Integrated with a 10kWh LiFePO4 Lithium Battery stack to guarantee 100% load backup for dual inverter air conditioners, water pumps, and essential lighting. Fully licensed under NEPRA net-metering, generating high electric credit during the day.',
-    imageUrl: '/src/assets/images/res_solar_installation_1784143571077.jpg'
+    imageUrl: resSolarImage
   },
   {
     id: 'proj-com-pesh',
@@ -300,7 +304,7 @@ export const PROJECTS: Project[] = [
     panelsCount: 208,
     co2ReductionTonnes: 98.0,
     description: 'Rooftop solar expansion for a leading shopping mall complex in Peshawar, KPK. This project utilizes Huawei SUN2000 smart string inverters on a customized elevated structure to retain premium rooftop space. Secured full NEPRA net-metering authorization with PESCO, slashing seasonal utility charges down to net zero during winter months.',
-    imageUrl: '/src/assets/images/com_solar_installation_1784143587235.jpg'
+    imageUrl: comSolarImage
   },
   {
     id: 'proj-ind-fais',
