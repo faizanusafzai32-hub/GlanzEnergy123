@@ -80,7 +80,9 @@ export default function Header({ activeSection, onNavigate, onOpenSurveyModal, i
             ? isDarkMode
               ? 'bg-[#050b18]/90 backdrop-blur-md py-3 border-b border-blue-900/25 shadow-lg shadow-blue-950/20'
               : 'bg-white/90 backdrop-blur-md py-3 border-b border-blue-100 shadow-md shadow-blue-100/10'
-            : 'bg-transparent py-5 border-b border-white/0'
+            : isDarkMode
+              ? 'bg-[#050b18] py-4 border-b border-blue-950 shadow-md'
+              : 'bg-white py-4 border-b border-blue-50 shadow-sm'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">

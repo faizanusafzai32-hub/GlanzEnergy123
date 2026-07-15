@@ -42,6 +42,8 @@ import SavingsCalculator from './components/SavingsCalculator';
 import ProductCatalog from './components/ProductCatalog';
 import ProjectPortfolio from './components/ProjectPortfolio';
 import ContactSection from './components/ContactSection';
+// @ts-ignore
+import heroBgImage from './assets/images/solar_house_engineers_1784143169968.jpg';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -153,28 +155,13 @@ export default function App() {
       <section
         id="hero"
         ref={sectionsRef.hero}
-        className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20"
+        className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 transition-all duration-300 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: isDarkMode
+            ? `linear-gradient(rgba(7, 8, 10, 0.75), rgba(7, 8, 10, 0.9)), url(${heroBgImage})`
+            : `linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.8)), url(${heroBgImage})`,
+        }}
       >
-        {/* Generated Image Background with beautiful grid overlay */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/src/assets/images/glanz_solar_hero_1784013930329.jpg"
-            alt="Glanz Premium Solar Installation Villa"
-            referrerPolicy="no-referrer"
-            className={`w-full h-full object-cover transition-opacity duration-300 ${isDarkMode ? 'opacity-35' : 'opacity-15'}`}
-          />
-          <div className={`absolute inset-0 transition-colors duration-300 ${
-            isDarkMode 
-              ? 'bg-gradient-to-b from-[#07080a]/40 via-[#07080a]/90 to-[#07080a]' 
-              : 'bg-gradient-to-b from-[#f4f7fe]/40 via-[#f4f7fe]/90 to-[#f4f7fe]'
-          }`} />
-          <div className={`absolute inset-0 transition-colors duration-300 ${
-            isDarkMode
-              ? 'bg-[radial-gradient(circle_at_center,transparent_40%,#07080a_100%)]'
-              : 'bg-[radial-gradient(circle_at_center,transparent_40%,#f4f7fe_100%)]'
-          }`} />
-        </div>
-
         {/* Dynamic Glowing Energy Accents */}
         <div className={`absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none transition-colors duration-300 ${
           isDarkMode ? 'bg-gradient-to-tr from-amber-500/5 to-green-500/5' : 'bg-gradient-to-tr from-blue-500/5 to-amber-500/5'
@@ -182,24 +169,16 @@ export default function App() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8 py-12">
           {/* Tagline Pill */}
-          <div className={`inline-flex items-center space-x-2 border px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide transition-colors duration-300 ${
-            isDarkMode 
-              ? 'bg-white/5 border-white/10 text-white' 
-              : 'bg-blue-50 border-blue-100 text-[#1e3a8a]'
-          }`}>
+          <div className="inline-flex items-center space-x-2 border px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide bg-white/10 border-white/20 text-white backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-[#fbbf24] animate-pulse" />
             <span>Premier Solar Engineering Firm</span>
           </div>
 
           <div className="space-y-4 max-w-4xl mx-auto">
-            <h1 className={`font-sans font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-[1.1] transition-colors duration-300 ${
-              isDarkMode ? 'text-white' : 'text-[#0f172a]'
-            }`}>
+            <h1 className="font-sans font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-[1.1] text-white">
               Enlightening the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fbbf24] to-yellow-500">Future</span>
             </h1>
-            <p className={`font-sans text-base sm:text-xl max-w-2xl mx-auto leading-relaxed transition-colors duration-300 ${
-              isDarkMode ? 'text-gray-300' : 'text-slate-600'
-            }`}>
+            <p className="font-sans text-base sm:text-xl max-w-2xl mx-auto leading-relaxed text-blue-100/90 font-medium">
               Eliminate load-shedding and reduce utility bills down to net zero. Glanz Energy engineers premium on-grid, hybrid, and industrial solar microgrids.
             </p>
           </div>
@@ -217,11 +196,7 @@ export default function App() {
             <button
               onClick={() => handleNavigate('contact')}
               id="hero-contact-btn"
-              className={`w-full sm:w-auto px-8 py-4 rounded-xl font-sans font-bold text-base cursor-pointer flex items-center justify-center space-x-1.5 transition-all border ${
-                isDarkMode 
-                  ? 'bg-white/5 hover:bg-white/10 text-white border-white/10' 
-                  : 'bg-blue-50 hover:bg-blue-100 text-blue-800 border-blue-100'
-              }`}
+              className="w-full sm:w-auto px-8 py-4 rounded-xl font-sans font-bold text-base cursor-pointer flex items-center justify-center space-x-1.5 transition-all border bg-white/5 hover:bg-white/10 text-white border-white/20 backdrop-blur-sm"
             >
               <span>Contact Us</span>
               <ChevronRight className="w-4 h-4" />
@@ -229,35 +204,33 @@ export default function App() {
           </div>
 
           {/* Core Credentials Badges */}
-          <div className={`pt-12 border-t max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-left transition-colors duration-300 ${
-            isDarkMode ? 'border-white/5' : 'border-slate-200'
-          }`}>
+          <div className="pt-12 border-t border-white/10 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
             <div className="flex items-start space-x-3">
-              <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}`} />
+              <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#fbbf24]" />
               <div>
-                <h5 className={`font-sans font-bold text-sm ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>Tier-1 Equipment</h5>
-                <p className={isDarkMode ? 'text-gray-500' : 'text-slate-500'}>LONGi & Jinko Authorized</p>
+                <h5 className="font-sans font-bold text-sm text-white">Tier-1 Equipment</h5>
+                <p className="text-xs text-blue-100/75 font-medium">LONGi & Jinko Authorized</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}`} />
+              <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#fbbf24]" />
               <div>
-                <h5 className={`font-sans font-bold text-sm ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>Certified Engineers</h5>
-                <p className={isDarkMode ? 'text-gray-500' : 'text-slate-500'}>UET & PEC Certified Teams</p>
+                <h5 className="font-sans font-bold text-sm text-white">Certified Engineers</h5>
+                <p className="text-xs text-blue-100/75 font-medium">UET & PEC Certified Teams</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}`} />
+              <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#fbbf24]" />
               <div>
-                <h5 className={`font-sans font-bold text-sm ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>Net Metering</h5>
-                <p className={isDarkMode ? 'text-gray-500' : 'text-slate-500'}>End-to-End Turnkey Support</p>
+                <h5 className="font-sans font-bold text-sm text-white">Net Metering</h5>
+                <p className="text-xs text-blue-100/75 font-medium">End-to-End Turnkey Support</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${isDarkMode ? 'text-[#fbbf24]' : 'text-blue-600'}`} />
+              <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#fbbf24]" />
               <div>
-                <h5 className={`font-sans font-bold text-sm ${isDarkMode ? 'text-white' : 'text-slate-800'}`}>25-Yr Performance</h5>
-                <p className={isDarkMode ? 'text-gray-500' : 'text-slate-500'}>Linear Warranty Protection</p>
+                <h5 className="font-sans font-bold text-sm text-white">25-Yr Performance</h5>
+                <p className="text-xs text-blue-100/75 font-medium">Linear Warranty Protection</p>
               </div>
             </div>
           </div>

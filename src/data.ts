@@ -403,10 +403,8 @@ export const COMPANY_DETAILS = {
   phoneDisplay: '+92 333 9425413',
   whatsapp: '+923339425413',
   email: 'info@glanzenergy.com',
-  address: 'Glanz Energy Plaza, Sector G-11 Markaz, Islamabad, 44000, Pakistan',
+  address: 'shaheen market I-9/2 Islamabad 44000, Pakistan',
   socials: {
-    facebook: 'https://facebook.com/glanzenergy',
-    linkedin: 'https://linkedin.com/company/glanzenergy',
-    instagram: 'https://instagram.com/glanzenergy'
+    facebook: 'https://www.facebook.com/solarenergitech'
   }
 };

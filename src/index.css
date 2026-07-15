@@ -25,3 +25,16 @@
   background: #fbbf24;
 }
 
+/* Short CSS classes to make the hero section transparent and showcase the solar-themed background */
+.hero-section-transparent {
+  background: transparent !important;
+}
+
+.solar-bg-overlay-dark {
+  background: linear-gradient(to bottom, rgba(7, 8, 10, 0.2) 0%, rgba(7, 8, 10, 0.65) 100%) !important;
+}
+
+.solar-bg-overlay-light {
+  background: linear-gradient(to bottom, rgba(244, 247, 254, 0.25) 0%, rgba(244, 247, 254, 0.7) 100%) !important;
+}
+

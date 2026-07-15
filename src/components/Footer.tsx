@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Facebook, Linkedin, Instagram, ArrowUpRight, Shield, Heart, Award, ArrowRight } from 'lucide-react';
+import { Facebook, ArrowUpRight, Shield, Heart, Award, ArrowRight } from 'lucide-react';
 import { COMPANY_DETAILS } from '../data';
 import Logo from './Logo';
 
@@ -59,24 +59,6 @@ export default function Footer({ onNavigate, isDarkMode = true }: FooterProps) {
                 aria-label="Facebook Profile"
               >
                 <Facebook className="w-4 h-4" />
-              </a>
-              <a
-                href={COMPANY_DETAILS.socials.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-xl bg-white/5 hover:bg-[#fbbf24] hover:text-[#0c0d0e] text-white flex items-center justify-center border border-white/5 transition-all"
-                aria-label="LinkedIn Profile"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href={COMPANY_DETAILS.socials.instagram}
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-xl bg-white/5 hover:bg-[#fbbf24] hover:text-[#0c0d0e] text-white flex items-center justify-center border border-white/5 transition-all"
-                aria-label="Instagram Profile"
-              >
-                <Instagram className="w-4 h-4" />
               </a>
             </div>
           </div>
