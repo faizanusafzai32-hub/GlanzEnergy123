@@ -44,6 +44,8 @@ import ProjectPortfolio from './components/ProjectPortfolio';
 import ContactSection from './components/ContactSection';
 // @ts-ignore
 import heroBgImage from './assets/images/solar_house_engineers_1784143169968.jpg';
+// @ts-ignore
+import batteryStorageImage from './assets/images/glanz_battery_storage_1784013970480.jpg';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -310,7 +312,7 @@ export default function App() {
               isDarkMode ? 'border-white/10 bg-[#0f1115]' : 'border-slate-200 bg-white'
             }`}>
               <img
-                src="/src/assets/images/glanz_battery_storage_1784013970480.jpg"
+                src={batteryStorageImage}
                 alt="Glanz smart energy backup suite product"
                 referrerPolicy="no-referrer"
                 className="w-full h-auto object-cover aspect-[4:3]"
