@@ -8,6 +8,8 @@ import { Service, Project, Product, Testimonial, BlogPost } from './types';
 import resSolarImage from './assets/images/res_solar_installation_1784143571077.jpg';
 // @ts-ignore
 import comSolarImage from './assets/images/com_solar_installation_1784143587235.jpg';
+// @ts-ignore
+import solarTubeWellImage from './assets/images/solar_tube_well_swabi_1784176418322.jpg';
 
 export const SERVICES: Service[] = [
   {
@@ -323,12 +325,12 @@ export const PROJECTS: Project[] = [
     title: '25HP High-Flow Solar Tube Well System',
     category: 'agricultural',
     sizeKw: 30,
-    location: 'Swat Valley, KPK',
+    location: 'Swabi, KPK',
     annualSavingsPkr: 1500000,
     panelsCount: 52,
     co2ReductionTonnes: 25.0,
     description: 'Off-grid high-volume agricultural irrigation setup for a peach and apple orchard farm. Includes a 25HP heavy-duty submersible water pump powered by a custom elevated 30kW solar tracker system with dynamic Variable Frequency Drive (VFD) controller. Completely replaced the farm\'s noisy and expensive diesel generator.',
-    imageUrl: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop'
+    imageUrl: solarTubeWellImage
   }
 ];
 
